@@ -1,0 +1,327 @@
+body{
+    background-color: #f07167;
+}
+.bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #f07167 50%, #00b4d8 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+.container{
+    padding: 100px;
+  }
+  .box {
+    position: relative;
+    margin: 100px;
+    min-width:400px;
+    transition: all 0.5s; 
+
+  }
+  .box:hover {
+    transform: translateY(-0.50em);
+    transform: translateX(-0.50em);
+}
+  .cover {
+    background-image: linear-gradient(-26deg, #f07167 50%, #00b4d8 50%);
+    transform: skew(20deg);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index:-1;
+    width: 800px;
+    height: 400px;
+    box-shadow: 8px 5px 5px black;
+    transition: background-color 3s;
+  }
+  .text {
+    color: white;  
+    padding:50px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+  }
+  .text h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+  #buttontext {
+    transform: skew(-20deg);
+  }
+  .generallinks{
+      text-decoration: none;
+      color: white;
+  }
+  #letsgo{
+    width: 120px;
+    height: 40px;
+    background: none;
+    color: #f07167;
+    border: 2px solid;
+    border-color: white;
+    color: white;
+    padding: 0.01em 0.2em;
+    font-size: 1em;   
+    transition: all 0.2s; 
+    font-family: 'Roboto', sans-serif;
+    transform: skew(20deg);
+
+
+  }
+  #letsgo:hover{
+    border-color: black;
+    color: white;
+    box-shadow: 5px 3px 3px black;
+    transform: translateY(-0.25em);
+    cursor: pointer;
+    transform: skew(20deg);
+
+  }
+#letsgo:active{
+    transform: translateX(10px);
+}
+/*This is the start of page 2 (About) */
+.bgp2 {
+    background-image: linear-gradient(-60deg, #f07167 50%, #00b4d8 50%);
+    bottom:0;
+    left:-50%;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+.containerp2{
+    padding: 10px;
+  }
+.boxp2 {
+    position: relative;
+    min-width:400px;
+    transition: all 0.5s; 
+  }
+.coverp2 {
+    background: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    margin-top: 10px;
+    padding-top: 10px;
+    z-index:-1;
+    width: 1600px;
+    height: 820px;
+    box-shadow: 8px 5px 5px black;
+  }
+.textp2 {
+    color: #495057;
+    padding:50px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 4%;
+  }
+#profileimage{
+    border-radius: 50%;
+    display: inline-block;
+    width: 450px;
+    height: 450px;
+    padding: 100px 40%;
+
+  }
+
+#abouttext {
+    margin-right: auto;
+    display: inline-block;
+    padding: 00px 20%;
+  }
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 4%;
+}
+#gettoknowme {
+    margin-right: auto;
+    margin-left: 100px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    color: #343a40;
+
+}
+.nav-links{
+    margin-right: 100px;
+}
+.nav-links li, a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    padding: 0px 10px;
+    transition: all 0.3s ease 0s;
+}
+.nav-links li{
+    border: solid;
+    transform: skew(20deg);
+    height: 30px;
+    margin-right: auto;
+    transition: all 0.5s; 
+}
+.nav-links a{
+    transform: skew(-20deg);
+    padding: 5px 5px;
+    color: #343a40;
+    transition: all 0.5s; 
+}
+.nav-links a:hover {
+
+    color: white;
+    background: none;
+}
+.nav-links li:hover {
+
+    color: white;
+    background: #343a40;
+    border: solid;
+    border-color: #343a40;
+}
+.hamburger div{
+    width: 30px;
+    height:3px;
+    background: #f2f5f7;
+    margin: 5px;
+    transition: all 0.3s ease;
+    }
+.hamburger{
+    display: none;
+    }
+.footerarea{
+    position: fixed;
+    background-image: linear-gradient(-60deg, #f07167 59.7%, #00b4d8 40%);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 160px;
+    box-shadow: 8px 5px 5px black;
+    height: 50px;
+    margin-bottom: 5px;
+}
+.footerabout{
+    background: #f07167;
+    width: 400px;
+    height: 50px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.footerabout:hover{
+    background: none;
+}
+.footerabout i {
+    padding: 10px 10px 5px 10px;
+    transition: all 0.3s ease 0s;
+    transition: all 0.5s; 
+}
+.footerabout i:hover {
+    padding: 10px 10px 5px 10px;
+    background: #2867B2;
+    color: white;
+}
+/*This is the start of page 3 (About) */
+
+.bgp3 {
+    background-image: linear-gradient(-60deg, #f07167 50%, #00b4d8 50%);
+    bottom:0;
+    left:-50%;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  .desc
+{
+  text-align: center;
+  font-weight: normal;
+  width: 100%;
+  margin: 0px;
+  visibility:hidden;
+}
+div:hover .desc {
+  visibility:visible;
+}
+div.img img {max-width:100%;}
+div.img{
+  margin: 155px 5px 0px 0px;
+  padding:5px;
+  box-sizing:border-box;
+  background:#f1f1f1;
+  line-height:0px;
+  height: auto;
+  width: 20%;
+  float: left;
+  text-align: center;
+  -webkit-transition:all 0.5s ease;
+  -moz-transition:all 0.5s ease; 
+  -o-transition:all 0.5s ease; 
+  transition:all 0.5s ease;
+  border-radius:4px;
+}	
+div:hover{line-height:30px;font-size:16px;}
+div.img img
+{
+  display: inline-block;
+  margin: 3px;
+}
+
+@keyframes bgfade
+{
+0%   {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes bgfade /* Safari and Chrome */
+{
+0%   {opacity:0;}
+100% {opacity:1;}
+}
+#htmllogo{
+    color: #E34C26;
+}
+#csslogo{
+    color: #264de4;
+}
+#jslogo{
+    color: #f0db4f;
+}
