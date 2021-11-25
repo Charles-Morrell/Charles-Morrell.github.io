@@ -259,7 +259,7 @@ header{
     background: #2867B2;
     color: white;
 }
-/*This is the start of page 3 (About) */
+/*This is the start of page 3 (Projects) */
 
 .bgp3 {
     background-image: linear-gradient(-60deg, #f07167 50%, #00b4d8 50%);
@@ -277,14 +277,16 @@ header{
   width: 100%;
   margin: 0px;
   visibility:hidden;
+  font-family: 'Roboto', sans-serif;
+  padding: 5px 2px;
 }
 div:hover .desc {
   visibility:visible;
 }
 div.img img {max-width:100%;}
 div.img{
-  margin: 155px 5px 0px 0px;
-  padding:5px;
+  margin: 155px 5px 0px 0px;  
+  padding:5px;      
   box-sizing:border-box;
   background:#f1f1f1;
   line-height:0px;
@@ -298,7 +300,7 @@ div.img{
   transition:all 0.5s ease;
   border-radius:4px;
 }	
-div:hover{line-height:30px;font-size:16px;}
+.img:hover{line-height:30px;font-size:16px;}
 div.img img
 {
   display: inline-block;
@@ -324,4 +326,82 @@ div.img img
 }
 #jslogo{
     color: #f0db4f;
+}
+#reactlogo{
+    color: #61DBFB;
+}
+.containerp3{
+    padding: 10px;
+  }
+.boxp3 {
+    position: relative;
+    min-width:400px;
+    transition: all 0.5s; 
+  }
+.coverp3 {
+    background: #343a40;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    margin-top: 10px;
+    padding-top: 10px;
+    z-index:-1;
+    width: 1600px;
+    height: 820px;
+    box-shadow: 8px 5px 5px black;
+  }
+  #mywork{
+    margin-right: auto;
+    margin-left: 100px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    color: white;
+  }
+  .nav-links3{
+    margin-right: 100px;
+}
+.nav-links3 li, a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    padding: 0px 10px;
+    transition: all 0.3s ease 0s;
+}
+.nav-links3 li{
+    border: solid;
+    transform: skew(20deg);
+    height: 30px;
+    margin-right: auto;
+    transition: all 0.5s; 
+}
+.nav-links3 a{
+    transform: skew(-20deg);
+    padding: 5px 5px;
+    color: white;
+    transition: all 0.5s; 
+}
+.nav-links3 a:hover {
+
+    color: #343a40;
+    background: none;
+}
+.nav-links3 li:hover {
+
+    color: white;
+    background: white;
+    border: solid;
+    border-color: white;
+}
+/*This is the start of page 4 (Contact) */
+
+.contactformfields{
+    font-family: 'Roboto', sans-serif;
+    padding: 20px 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
