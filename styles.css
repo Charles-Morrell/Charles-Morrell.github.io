@@ -259,6 +259,10 @@ header{
     background: #2867B2;
     color: white;
 }
+#linkedin{
+  text-decoration: none;
+  color: inherit;
+}
 /*This is the start of page 3 (Projects) */
 
 .bgp3 {
@@ -273,16 +277,14 @@ header{
   .desc
 {
   text-align: center;
-  font-weight: normal;
+  font-weight: bold;
   width: 100%;
   margin: 0px;
-  visibility:hidden;
-  font-family: 'Roboto', sans-serif;
-  padding: 5px 2px;
-}
-div:hover .desc {
   visibility:visible;
+  font-family: 'Roboto', sans-serif;
+  padding: 15px 2px;
 }
+
 div.img img {max-width:100%;}
 div.img{
   margin: 155px 5px 0px 0px;  
@@ -292,13 +294,13 @@ div.img{
   line-height:0px;
   height: auto;
   width: 20%;
-  float: left;
   text-align: center;
   -webkit-transition:all 0.5s ease;
   -moz-transition:all 0.5s ease; 
   -o-transition:all 0.5s ease; 
   transition:all 0.5s ease;
   border-radius:4px;
+  display: inline-block;
 }	
 .img:hover{line-height:30px;font-size:16px;}
 div.img img
@@ -340,7 +342,7 @@ div.img img
   }
 .coverp3 {
     background: #343a40;
-    position: relative;
+    position: absolute;
     left: 0;
     right: 0;
     top: 0;
@@ -399,9 +401,104 @@ div.img img
 /*This is the start of page 4 (Contact) */
 
 .contactformfields{
-    font-family: 'Roboto', sans-serif;
-    padding: 20px 10px;
-    position: absolute;
-    top: 0;
-    left: 0;
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 80%;
+  padding: 0px 0px ;
+  width: 395px;
+  color: white;
+}
+
+.contactformfields label{
+  color: white;
+  padding: 20px 5px;
+}
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+
+}
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 90%;
+  border: 1px solid #343a40;
+  background: white;
+  margin: 0px 5px;
+  padding: 10px;
+
+}
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #343a40;
+}
+.contact_container{
+  background-color:burlywood;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  
+}
+#contact {
+  background: white;
+  padding: 5px;
+  margin: 15px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  
+}
+#contact h4 {
+  color: #343a40;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 100;
+  
+}
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+
+}
+#contact p {
+  color: #343a40;
+  text-align: center;
+
+}
+.submit_button_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 200px;
+  border: none;
+  background: #00b4d8;
+  color: #FFF;
+  margin: 10px 5px 5px;
+  padding: 10px;
+  font-size: 15px;
+  
+}
+#contact button[type="submit"]:hover {
+  background: #f07167;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
