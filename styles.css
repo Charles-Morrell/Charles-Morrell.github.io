@@ -35,13 +35,14 @@ body {
 }
 
 .container {
-  padding: 100px;
+  padding: 200px;
 }
 
 .box {
-  position: relative;
-  margin: 100px;
-  min-width: 400px;
+  margin: auto;
+  display: grid;
+  justify-items: center;
+  min-width: 300px;
   transition: all 0.5s;
 
 }
@@ -52,24 +53,20 @@ body {
 }
 
 .cover {
-  background-color: white;
-  opacity: 30%;
-  transform: skew(20deg);
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+  background: rgba(255, 255, 255, .2);
+  clip-path: polygon(0 0, 80% 0, 100% 100%, 20% 100%);
+  display: grid;
+  justify-items: center;
   margin: auto;
-  z-index: -1;
-  width: 600px;
-  height: 300px;
+  width: 100%;
+  max-width: 800px;
   box-shadow: 8px 5px 5px black;
   transition: background-color 3s;
 }
 
 .text {
   color: black;
+  opacity: 100%;
   padding: 50px;
   text-align: center;
   font-family: 'Roboto', sans-serif;
@@ -101,9 +98,7 @@ body {
   font-size: 1em;
   transition: all 0.2s;
   font-family: 'Roboto', sans-serif;
-  transform: skew(20deg);
-
-
+  transform: skew(30deg);
 }
 
 #letsgo:hover {
@@ -172,13 +167,13 @@ body {
 
 #profileimage {
   border-radius: 50%;
-  display: flex;
-  flex-wrap: wrap;
-  width: 350px;
-  height: 350px;
+  display: grid;
+  height: auto;
+  width: auto;
+  max-width: 350px;
+  max-height: 350px;
   padding: 100px 40%;
   object-fit: cover;
-
 }
 
 #abouttext {
