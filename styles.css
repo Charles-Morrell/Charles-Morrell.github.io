@@ -200,7 +200,7 @@ header {
 }
 
 .nav-links {
-  margin-right: 10px;
+  margin-right: 1px;
 }
 
 .nav-links li,
@@ -214,7 +214,7 @@ a {
 }
 
 .nav-links li {
-  border: solid;
+  border: solid 1px;
   transform: skew(20deg);
   height: 30px;
   margin-right: auto;
@@ -382,7 +382,7 @@ div.img img {
 }
 
 #htmllogo {
-  color: #E34C26;
+  color: #712cf9;
 }
 
 #csslogo {
@@ -432,7 +432,7 @@ div.img img {
 }
 
 .nav-links3 {
-  margin-right: 100px;
+  margin-right: 1px;
 }
 
 .nav-links3 li,
@@ -446,7 +446,7 @@ a {
 }
 
 .nav-links3 li {
-  border: solid;
+  border: solid 1px;
   transform: skew(20deg);
   height: 30px;
   margin-right: auto;
