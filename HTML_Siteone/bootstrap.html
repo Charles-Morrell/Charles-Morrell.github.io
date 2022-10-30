@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style2.css">
+    <title>HTML_Siteone</title>
+</head>
+
+<body>
+    <header>
+        <div class="container px-3 py-1overflow-hidden text-center">
+            <div class="row gx-6 gy-1 bg-primary rounded shadow">
+                <div class="col-md-6 text-light">
+                    <h1>Welcome to Bootstrap!</h1>
+                </div>
+                <div class="col-md-6">
+                    <nav class="p-1 navbar navbar-expand-lg navbar-dark bg-primary">
+                        <div class="container-fluid">
+                            <div class="container justify-content-end"></div>
+                            <a class="navbar-brand" href="https://charliemorrell.com.au/projects">Charlie Morrell</a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active"
+                                            href="https://getbootstrap.com/docs/5.2/getting-started/introduction/">Why?</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container px-1 py-3 text-light">
+
+        <div class="col-md-12">
+            <div class="row gx-1 gy-1 rounded">
+                <h3 class="col-md-6">Everything on this site was made with Bootstrap.</h3>
+                <div class="gx-1 col-md-6">
+                    <button type="button" class="btn btn-success text-light shadow" id="liveToastBtn">Toast
+                        Notifications!</button>
+                    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                            <div class="toast-header">
+                                <img src="bootstrap-5.svg" class="rounded me-2" alt="bootstrap_logo" width="20">
+                                <strong class="me-auto">Bootstrap</strong>
+                                <small>11 mins ago</small>
+                                <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="toast-body text-dark">
+                                Hello, world! This is a toast message.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container px-1 py-1">
+        <div class="row gx-6 gy-1 rounded justify-content-center">
+            <div class="card shadow col-md-6" style="width: 18rem;">
+                <img src="bootstrap-5.svg" id="why_bootstrap_img" class="card-img-top mb-5" alt="profilepicture">
+                <div class="card-body mt-5">
+                    <h5 class="card-title">Why Bootstrap?</h5>
+                    <p class="card-text">Fast. Stylish. Easy. Bootstrap is easy to use, and looks great.</p>
+                    <a href="https://getbootstrap.com/docs/5.2/getting-started/introduction/"
+                        class="btn btn-primary">Learn
+                        More</a>
+                </div>
+            </div>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false" style="width: 50rem;">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="stock_img1.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Create smooth, crisp images</h5>
+                            <p>Implement stylish designs with the use of a Carousel</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="stock_img2.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Upload your best pictures here</h5>
+                            <p>Customize it however you like!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="stock_img3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container px-1 py-2">
+        <div class="row gx-6 gy-1 rounded justify-content-center">
+            <div class="accordion accordion-flush col-md-6 px-1 shadow" id="accordionFlushExample"
+                style="width: 68rem;">
+                <div class="accordion-item border rounded">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            You can also use Accordions!
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">They are great for displaying information in a more focused way.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border rounded">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Anything can be displayed in an Accordion.
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Images, links and even code snippets.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item border rounded">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            You can add as many or as little tabs as you like.
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">This can help you control the information displayed on your website.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>const toastTrigger = document.getElementById('liveToastBtn')
+        const toastLiveExample = document.getElementById('liveToast')
+        if (toastTrigger) {
+            toastTrigger.addEventListener('click', () => {
+                const toast = new bootstrap.Toast(toastLiveExample)
+
+                toast.show()
+            })
+        }
+    </script>
+</body>
+
+</html>
