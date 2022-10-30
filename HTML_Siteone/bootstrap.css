@@ -1,0 +1,21 @@
+body {
+    padding: 20px;
+    background: linear-gradient(rgba(84, 56, 220, 0.7), rgba(255, 255, 255, 0.2));
+}
+
+.item.active {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2));
+}
+
+.item .slide {
+    position: relative;
+    z-index: -1;
+    width: 400px;
+    height: 300px;
+}
+
+#why_bootstrap_img {
+    width: 10rem;
+    padding-top: 4rem;
+    margin: auto;
+}
